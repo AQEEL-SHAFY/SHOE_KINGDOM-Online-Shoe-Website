@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png">
+    <title>Shoe Kingdom | Wallabee Burgundy Nubuck </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquerySi.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+    <link href="jquery-ui-1.13.0.custom/jquery-ui.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.13.0/themes/ui-lightness/jquery-ui-css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="shoes.js"></script>
+
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col-1 ">
+            <nav class="sidenav">
+                <a href="home.html"><i class="fas fa-home"></i></a><br>
+                <a href="index.html" class="active"><i class="fas fa-search"></i> </a><br>
+                <a href="favourites.html"><i class="fas fa-star"></i></a>
+
+            </nav>
+        </div>
+
+        <div class="col-7 mt-3">
+            <div class="card" style="width: 50rem;">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Images</a></li>
+                        <li><a href="#tabs-2">Description</a></li>
+                        <li><a href="#tabs-3">Delivery</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <section id="propert-details-general-tab1">
+                            <h2 class="shoeName">Wallabee Burgundy Nubuck</h2>
+                            <img id="property-large" src="images/shoe13.1.jpg" alt="largeImg1"><br>
+                            <a href="images/shoe13.1.jpg"><img id="property-small1" src="images/shoe13.1.jpg" alt="smallImg1"></a>
+                            <a href="images/shoe13.2.jpg"><img id="property-small2" src="images/shoe13.2.jpg" alt="smallImg2"></a>
+                            <a href="images/shoe13.3.jpg"><img id="property-small3" src="images/shoe13.3.jpg" alt="smallImg3"></a>
+                            <a href="images/shoe13.4.jpg"><img id="property-small4" src="images/shoe13.4.jpg" alt="smallImg4"></a>
+                            <a href="images/shoe13.5.jpg"><img id="property-small5" src="images/shoe13.5.jpg" alt="smallImg5"></a>
+
+                        </section><br>
+                        <ul>
+                            <li>Price:- €84</li>
+                            <li>Colours Available:- Black,<a href="shoe12.html">Grey,</a><a href="shoe1.html">Red</a>
+                            </li>
+                            <li>Sizes Available:- 5,6,7,8</li>
+                            <li>Gender:- Male</li>
+                        </ul>
+                        <p id="shoe13">
+
+                            <button class="addFav btn btn-primary">Add To Favourites</button>
+                            <button class="clearFav btn btn-primary">Clear From Favourites</button>
+                        </p>
+
+                    </div>
+                    <div id="tabs-2">
+                        <p>Worn by revolutionaries, free thinkers, and counter-culture icons for almost 50 years, no shoe is quite like the Clarks Wallabee. Perfectly complementing its authentic moccasin silhouette, a signature sustainable Forest Stewardship
+                            Council®-certified rubber crepe sole enhances grip for easy everyday wear. Simply made from just two pieces of burgundy nubuck and finished with a leather collar, its relaxed yet structured aesthetic is a celebration of true
+                            craftsmanship. </p>
+                        <ul>
+                            <li>Upper Material - Nubuck</li>
+                            <li>Lining Material - Unlined</li>
+                            <li>Sole Material - Crepe</li>
+                            <li>Fastening Type - Lace</li>
+                            <li>Removable Insole - No</li>
+                        </ul>
+                    </div>
+                    <div id="tabs-3">
+                        <ul>
+                            <li>£6.95 &nbsp;&nbsp;&nbsp;&nbsp; DPD Next Day Delivery (Order before 7pm)</li>
+                            <li>FREE &nbsp;&nbsp;&nbsp;&nbsp;Collect from store (Within 4 working days)</li>
+                            <li>FREE &nbsp;&nbsp;&nbsp;&nbsp;Standard Delivery (Within 4 working days)</li>
+                            <li>FREE &nbsp;&nbsp;&nbsp;&nbsp;Collect Plus (Within 5 working days)</li>
+                            <li>£5.95 &nbsp;&nbsp;&nbsp;&nbsp; Hermes Express Delivery (Within 2 working days)</li>
+                            <li>FREE &nbsp;&nbsp;&nbsp;&nbsp;Returns & Exchanges on all Items</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="images/sideImage.png" class="sideImg" alt="s">
+            <div class="fav">
+                <div id="gg" ondrop="drop(event)" ondragover="allowDrop(event)">Favourites</div>
+                <br>
+                <img id="dragImg" src="images/shoe12.1.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69" alt="dragImg">
+                <h5 id="Drag">Drag to favourites</h5>
+                <div id="text2Fav" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

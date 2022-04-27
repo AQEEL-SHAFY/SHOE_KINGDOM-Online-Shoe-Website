@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <title>Shoe Kingdom | Search </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="nav.css">
+    <script src="jquerySi.js"></script>
+    <script src="jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+    <link href="jquery-ui-1.13.0.custom/jquery-ui.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.13.0/themes/ui-lightness/jquery-ui-css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="shoes.js"></script>
+
+</head>
+
+<body>
+    <!-- navigation bar starts -->
+    <nav class="sidenav">
+        <a href="home.html"><i class="fas fa-home"></i></a><br>
+        <a href="index.html" class="active"><i class="fas fa-search"></i> </a><br>
+        <a href="favourites.html"><i class="fas fa-star"></i></a>
+
+    </nav>
+    <!-- navigation bar ends -->
+
+    <div class="row">
+        <div class="col-12 col-lg-8">
+            <div class="container">
+                <h1 class="searchHeading">Search For Top Shoes</h1>
+                <div class="row mb-2 mt-4 ms-5">
+                    <div class="col-12 col-lg-4 mb-2 mb-lg-0">
+                        <!-- shoe type selector -->
+                        <select name="style" id="style" class="form-select" aria-label="Default select example">
+                            <option value="" disabled selected hidden>Shoe Type</option>
+                            <option value="casual">Casual Weares</option>
+                            <option value="formal">Formal Weares</option>
+                            <option value="sports">Sports Weares</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-2 mb-2 mb-lg-0">
+                        <!-- gender selector -->
+                        <select name="gender" id="gender" class="form-select" aria-label="Default select example">
+                            <option value="" disabled selected hidden>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="universal">Universal</option>
+                        </select>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-2 mb-lg-0">
+                        <!-- size selector -->
+                        <input class="form-control" id="size" value="Size">
+                    </div>
+                    <div class="col-6 col-lg-2 mb-2 mb-lg-0">
+                        <!-- colour selector -->
+                        <select class="form-select" aria-label="Default select example" name="color" id="color">
+                            <option class="black" value="black" selected>Black</option>
+                            <option class="white" value="white">White</option>
+                            <option class="grey" value="grey">Grey</option>
+                            <option class="blue" value="blue">Blue</option>
+                            <option class="pink" value="pink">Pink</option>
+                            <option class="brown" value="brown">Brown</option>
+                            <option class="red" value="red">Red</option>
+                            <option class="green" value="green">Green</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-2 mb-2 mb-lg-0">
+                        <!-- search button-->
+                        <button type="button" id="searchBtn" class="btn btn-primary w-100" onclick="show()"><i
+                                class="fas fa-search"></i>&nbsp;
+                            Search</button>
+                    </div>
+                </div>
+                <div class="row ms-5 ">
+                    <!-- price slider -->
+                    <div class="col-12 col-lg-10 mb-2 mb-lg-0">
+                        <div id="slider-range" class="mt-3"></div>
+                    </div>
+                    <div class="col-12 col-lg-2  mb-4">
+                        <input class="form-control" id="amount" readonly type="text" placeholder="Default input">
+                    </div>
+                </div>
+                <!-- shoe carts -->
+                <div class="row ms-5 " id="shoeCard1">
+                    <div class="col-12 col-lg-6">
+                        <div class='card' id="shoeCarts">
+                            <img src="images/shoe1.1.jpg" class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                                <h4 class='card-title'>Wallabee Burgundy Nubuck </h4>
+                                <h5>Mens Original Icon Shoes</h5>
+                                <h5>€84</h5>
+                                <p class='card-text text-truncate'> Worn by revolutionaries, free thinkers, and counter-culture icons for almost 50 years, no shoe is quite like the Clarks Wallabee.
+                                </p>
+                                <a class='btn btn-primary ' href="shoe1.html">Visit Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class='card'>
+                            <img src="images/shoe2.1.jpg" class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                                <h4 class='card-title'>Tri Path Trek GORE-TEX Combination </h4>
+                                <h5>Mens Sports Shoes</h5>
+                                <h5>€115</h5>
+                                <p class='card-text text-truncate'>Refreshing our bestselling Orinoco profile, a lace-up ankle boot that stays all day wearable. The premium dark olive leather upper stays classic and crafted while the cleated sole with 3cm heel feels durable and adds grip.
+                                    Perfect to step into the season with casual style. </p>
+                                <a class='btn btn-primary ' href="shoe2.html">Visit Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+
+                <div class="row ms-5 " id="shoeCard2">
+                    <div class="col-12 col-lg-6">
+                        <div class='card'>
+                            <img src="images/shoe9.1.jpg" class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                                <h4 class='card-title'>Pure 2 Tassel White Leather </h4>
+                                <h5>Women Sports Shoes</h5>
+                                <h5>€89</h5>
+                                <p class='card-text text-truncate'>An easy-to-wear casual shoe, Appley Tie wraps feet in comfort for the feel-good factor all day long.</p>
+                                <a class='btn btn-primary ' href="shoe9.html">Visit Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class='card'>
+                            <img src="images/shoe10.1.jpg" class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                                <h4 class='card-title'>Tri Path Day GORE-TEX Black Leather </h4>
+                                <h5>Universal Sports Shoes</h5>
+                                <h5>€120</h5>
+                                <p class='card-text text-truncate'>Universal walking boots that guarantee comfort, grip and durability
+                                </p>
+                                <a class='btn btn-primary ' href="shoe10.html">Visit Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-lg-flex" id="Placeholder">
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- image added to side -->
+        <div class="col-0 col-lg-4">
+            <img src="images/sideImage.png" class="sideImg" alt="">
+        </div>
+    </div>
+
+
+
+    <!-- JSON file -->
+    <script>
+        var shoeProperties = {
+
+            "shoes": [{
+                    "id": "shoe1",
+                    "name": "Wallabee Burgundy Nubuck",
+                    "type": "Mens Original Icon Shoes",
+                    "gender": "male",
+                    "style": "formal",
+                    "sizes": [3, 4, 5, 6, 7, 8],
+                    "price": 84,
+                    "color": "red",
+                    "description": "Worn by revolutionaries, free thinkers, and counter-culture icons for almost 50 years, no shoe is quite like the Clarks Wallabee.",
+                    "picture": "images/shoe1.1.jpg",
+                    "url": "shoe1.html"
+                }, {
+                    "id": "shoe2",
+                    "name": "Tri Path Trek GORE-TEX Black Combination",
+                    "type": "Mens Sports Shoes",
+                    "gender": "male",
+                    "style": "sports",
+                    "sizes": [4, 5, 6, 7],
+                    "price": 115,
+                    "color": "black",
+                    "description": "Refreshing our bestselling Orinoco profile, a lace-up ankle boot that stays all day wearable. The premium dark olive leather upper stays classic and crafted while the cleated sole with 3cm heel feels durable and adds grip. Perfect to step into the season with casual style.",
+                    "picture": "images/shoe2.1.jpg",
+                    "url": "shoe2.html"
+                },
+
+                {
+                    "id": "shoe3",
+                    "name": "Ashcombe Hi GORE-TEX Black Warmlined Leather",
+                    "type": "Mens Boots ",
+                    "gender": "male",
+                    "style": "casual",
+                    "sizes": [3, 4, 5, 6],
+                    "price": 125,
+                    "color": "black",
+                    "description": "For an active outdoor ankle boot, look no further. This performance style features a waterproof, breathable.",
+                    "picture": "images/shoe3.1.jpg",
+                    "url": "shoe3.html"
+                },
+
+                {
+                    "id": "shoe4",
+                    "name": "Chantry Hall Black Leather",
+                    "type": "Mens Original Leather ",
+                    "gender": "male",
+                    "style": "formal",
+                    "sizes": [3, 4, 5, 6, 7],
+                    "price": 89,
+                    "color": "black",
+                    "description": "Formal footwear, redefined. With subtly relaxed styling and comfort at its core.",
+                    "picture": "images/shoe4.1.jpg",
+                    "url": "shoe4.html"
+                },
+
+                {
+                    "id": "shoe5",
+                    "name": "Un Maui Lace Blush Leather",
+                    "gender": "female",
+                    "type": "Women Casual Shoes ",
+                    "style": "casual",
+                    "sizes": [3, 4, 5, 6, 7, 8, 9],
+                    "price": 71,
+                    "color": "pink",
+                    "description": "Perfect for city adventures, these luxe leather lace-ups from our Unstructured collection.",
+                    "picture": "images/shoe5.1.jpg",
+                    "url": "shoe5.html"
+                }, {
+                    "id": "shoe6",
+                    "name": "Clarkdale Arlo Dark Olive Suede",
+                    "gender": "female",
+                    "type": "Women Boots",
+                    "style": "casual",
+                    "sizes": [4, 5, 6, 7, 8, 9, 10, 11],
+                    "price": 99,
+                    "color": "brown",
+                    "description": "These Chelsea boots are crafted from a dark olive suede and feature.",
+                    "picture": "images/shoe6.1.jpg",
+                    "url": "shoe6.html"
+                }, {
+                    "id": "shoe7",
+                    "name": "Orianna Derby Metallic Leather",
+                    "gender": "female",
+                    "type": "Women Shoes",
+                    "style": "formal",
+                    "sizes": [4, 5, 9, 10, 11],
+                    "price": 89,
+                    "color": "black",
+                    "description": "A super-chunky sole is the on-trend finishing touch to chic burgundy leather lace-up Oriann.",
+                    "picture": "images/shoe7.1.jpg",
+                    "url": "shoe7.html"
+                }, {
+                    "id": "shoe8",
+                    "name": "Pure 2 Tassel White Leather",
+                    "gender": "female",
+                    "type": "Women Shoes",
+                    "style": "casual",
+                    "sizes": [3, 4, 5, 6],
+                    "price": 85,
+                    "color": "white",
+                    "description": "Slip into loafer Pure 2 Tassel for instant comfort and enhanced style status.",
+                    "picture": "images/shoe8.1.jpg",
+                    "url": "shoe8.html"
+                }, {
+                    "id": "shoe9",
+                    "name": "Pure 2 Tassel White Leather",
+                    "gender": "female",
+                    "type": "Women Sports Shoes",
+                    "style": "sports",
+                    "sizes": [4, 5, 6],
+                    "price": 89,
+                    "color": "blue",
+                    "description": "An easy-to-wear casual shoe, Appley Tie wraps feet in comfort for the feel-good factor all day long.",
+                    "picture": "images/shoe9.1.jpg",
+                    "url": "shoe9.html"
+                }, {
+                    "id": "shoe10",
+                    "name": "Tri Path Day GORE-TEX Black Leather",
+                    "gender": "universal",
+                    "type": "Universal Sports Shoes",
+                    "style": "sports",
+                    "sizes": [3, 4, 5, 6, 7, 8],
+                    "price": 120,
+                    "color": "black",
+                    "description": "Universal walking boots that guarantee comfort, grip and durability.",
+                    "picture": "images/shoe10.1.jpg",
+                    "url": "shoe10.html"
+                }, {
+                    "id": "shoe11",
+                    "name": "Tri Path Trek GORE-TEX Black Combination",
+                    "type": "Mens Sports Shoes",
+                    "gender": "male",
+                    "style": "sports",
+                    "sizes": [4, 5, 6, 7],
+                    "price": 115,
+                    "color": "brown",
+                    "description": "Refreshing our bestselling Orinoco profile, a lace-up ankle boot that stays all day wearable. The premium dark olive leather upper stays classic and crafted while the cleated sole with 3cm heel feels durable and adds grip. Perfect to step into the season with casual style.",
+                    "picture": "images/shoe11.1.jpg",
+                    "url": "shoe11.html"
+                }, {
+                    "id": "shoe12",
+                    "name": "Wallabee Burgundy Nubuck",
+                    "type": "Mens Original Icon Shoes",
+                    "gender": "male",
+                    "style": "formal",
+                    "sizes": [3, 4, 5, 6, 7, 8],
+                    "price": 84,
+                    "color": "grey",
+                    "description": "Worn by revolutionaries, free thinkers, and counter-culture icons for almost 50 years, no shoe is quite like the Clarks Wallabee.",
+                    "picture": "images/shoe12.1.jpg",
+                    "url": "shoe12.html"
+                }, {
+                    "id": "shoe13",
+                    "name": "Wallabee Burgundy Nubuck",
+                    "type": "Mens Original Icon Shoes",
+                    "gender": "male",
+                    "style": "formal",
+                    "sizes": [3, 4, 5, 6, 7, 8],
+                    "price": 84,
+                    "color": "black",
+                    "description": "Worn by revolutionaries, free thinkers, and counter-culture icons for almost 50 years, no shoe is quite like the Clarks Wallabee.",
+                    "picture": "images/shoe13.1.jpg",
+                    "url": "shoe13.html"
+                }
+
+
+            ]
+        }
+    </script>
+</body>
+
+</html>

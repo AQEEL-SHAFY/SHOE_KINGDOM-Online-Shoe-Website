@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <title>Shoe Kingdom | ATL Trek Lo GORE-TEX Black Combination </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquerySi.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+    <link href="jquery-ui-1.13.0.custom/jquery-ui.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.13.0/themes/ui-lightness/jquery-ui-css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="shoes.js"></script>
+
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col-1 ">
+            <nav class="sidenav">
+                <a href="home.html"><i class="fas fa-home"></i></a><br>
+                <a href="index.html" class="active"><i class="fas fa-search"></i> </a><br>
+                <a href="favourites.html"><i class="fas fa-star"></i></a>
+
+            </nav>
+        </div>
+
+        <div class="col-7 mt-3">
+            <div class="card" style="width: 50rem;">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Images</a></li>
+                        <li><a href="#tabs-2">Description</a></li>
+                        <li><a href="#tabs-3">Delivery</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <section id="propert-details-general-tab1">
+                            <h2 class="shoeName">ATL Trek Lo GORE-TEX Black Combination</h2>
+                            <img id="property-large" src="images/shoe11.1.jpg" alt="largeImg"><br>
+                            <a href="images/shoe11.1.jpg"><img id="property-small1" src="images/shoe11.1.jpg" alt="smallImg1"></a>
+                            <a href="images/shoe11.2.jpg"><img id="property-small2" src="images/shoe11.2.jpg" alt="smallImg2"></a>
+                            <a href="images/shoe11.3.jpg"><img id="property-small3" src="images/shoe11.3.jpg" alt="smallImg3"></a>
+                            <a href="images/shoe11.4.jpg"><img id="property-small4" src="images/shoe11.4.jpg" alt="smallImg4"></a>
+                            <a href="images/shoe11.5.jpg"><img id="property-small5" src="images/shoe11.5.jpg" alt="smallImg5"></a>
+
+                        </section><br>
+                        <ul>
+                            <li>Price:- €115</li>
+                            <li>Colours Available:- Brown,<a href="shoe2.html">Black</a></li>
+                            <li>Sizes Available:- 5,6,7</li>
+                            <li>Gender:- Male</li>
+                        </ul>
+                        <p id="shoe11">
+
+                            <button class="addFav btn btn-primary">Add To Favourites</button>
+                            <button class="clearFav btn btn-primary">Clear From Favourites</button>
+                        </p>
+
+                    </div>
+                    <div id="tabs-2">
+                        <p>Built for the toughest outdoor terrain and to withstand all weathers, walking boot ATL Trek Lo GTX helps you make the most of getting off the beaten track. Waterproof GORE-TEX® technology keeps feet dry and comfortable, and a rugged,
+                            cleated Mimic Grip recycled Rock-engineered rubber sole optimises traction and stability. Premium black leathers team with an airy EVA midsole, breathable footbed, and recycled laces, lining and sock to boost sustainability
+                            and cushion every step.
+                        </p>
+                        <ul>
+                            <li>Upper Material - Gore Tex Nubuck</li>
+                            <li>Lining Material - Textile</li>
+                            <li>Sole Material - Rubber</li>
+                            <li>Fastening Type - Lace</li>
+                            <li>Removable Insole - No</li>
+                        </ul>
+                    </div>
+                    <div id="tabs-3">
+                        <ul>
+                            <li>£6.95 &nbsp;&nbsp;&nbsp;&nbsp; DPD Next Day Delivery (Order before 7pm)</li>
+                            <li>FREE &nbsp;&nbsp;&nbsp;&nbsp;Collect from store (Within 4 working days)</li>
+                            <li>FREE &nbsp;&nbsp;&nbsp;&nbsp;Standard Delivery (Within 4 working days)</li>
+                            <li>FREE &nbsp;&nbsp;&nbsp;&nbsp;Collect Plus (Within 5 working days)</li>
+                            <li>£5.95 &nbsp;&nbsp;&nbsp;&nbsp; Hermes Express Delivery (Within 2 working days)</li>
+                            <li>FREE &nbsp;&nbsp;&nbsp;&nbsp;Returns & Exchanges on all Items</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-2">
+            <img src="images/sideImage.png" class="sideImg" alt="">
+            <div class="fav">
+                <div id="gg" ondrop="drop(event)" ondragover="allowDrop(event)">Add to Favourites</div>
+                <br>
+                <img id="dragImg" src="images/shoe11.1.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69" alt="dragImg">
+                <h5 id="Drag">Drag to favourites</h5>
+                <div id="text2Fav" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
